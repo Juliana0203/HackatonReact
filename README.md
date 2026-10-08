@@ -1,34 +1,35 @@
-# R&M Explorer
+# R&M Explorer · Hackaton
 
-Aplicación React para explorar y buscar personajes de Rick and Morty. Los datos
-se consultan desde la [Rick and Morty API](https://rickandmortyapi.com/documentation).
+Aplicación **Next.js (App Router) + TypeScript** que explora los personajes de [Rick and Morty](https://rickandmortyapi.com/documentation#rest) e integra los retos del hackathon.
+
+## Contenido
+
+- **Navbar** con búsqueda por nombre (formulario GET, funciona vía URL: `/?q=morty&page=2`).
+- **Listado de personajes** renderizado en el servidor, con paginación y estados de carga, vacío y error.
+- **Progress bar** cuyo color cambia de rojo a verde según el porcentaje.
+- **Timer** con Start / Stop / Reset.
+- **Password generator** con longitud, tipos de caracteres, fortaleza y copiado.
+- **Reto 3**: formulario de registro con validación y `alert` con el JSON (demo, sin base de datos).
+
+## Estructura
+
+```
+app/          layout, página principal y estilos globales
+components/   Navbar, CharacterGallery (servidor) y componentes interactivos (cliente)
+lib/          cliente tipado de la API y lógica del generador de contraseñas
+```
 
 ## Requisitos
 
-- Node.js 20.19+ o 22.12+
-- npm
-
-## Desarrollo
-
-```sh
-npm install
-npm run dev
-```
+- Node.js 20.9 o superior
 
 ## Scripts
 
-- `npm run dev`: inicia el servidor local de desarrollo.
-- `npm run build`: crea la versión de producción en `dist`.
-- `npm run preview`: sirve localmente la versión compilada.
-- `npm run lint`: ejecuta Oxlint.
-
-## Funcionalidades
-
-- Catálogo de personajes con búsqueda por nombre y paginación.
-- Barra de progreso con valor y color ajustables.
-- Cronómetro con controles de inicio, pausa y reinicio.
-- Generador criptográfico de contraseñas con opciones configurables.
-- Formulario de demostración con validación y vista previa JSON.
-
-La aplicación consume la API pública directamente desde el navegador. El
-formulario es una demostración local y no guarda datos en una base de datos.
+```bash
+npm install
+npm run dev        # desarrollo en http://localhost:3000
+npm run build      # build de producción (incluye type-check)
+npm start          # servir el build
+npm run lint       # ESLint
+npm run typecheck  # tsc --noEmit
+```
