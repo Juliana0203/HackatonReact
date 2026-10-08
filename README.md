@@ -1,11 +1,9 @@
-# R&M Explorer · Hackaton
+# Hackaton
 
-Aplicación **Next.js (App Router) + TypeScript** que explora los personajes de [Rick and Morty](https://rickandmortyapi.com/documentation#rest) e integra los retos del hackathon.
+Aplicación **Next.js (App Router) + TypeScript** con los retos del hackathon.
 
 ## Contenido
 
-- **Navbar** con búsqueda por nombre (formulario GET, funciona vía URL: `/?q=morty&page=2`).
-- **Listado de personajes** renderizado en el servidor, con paginación y estados de carga, vacío y error.
 - **Progress bar** cuyo color cambia de rojo a verde según el porcentaje.
 - **Timer** con Start / Stop / Reset.
 - **Password generator** con longitud, tipos de caracteres, fortaleza y copiado.
@@ -15,8 +13,8 @@ Aplicación **Next.js (App Router) + TypeScript** que explora los personajes de 
 
 ```
 app/          layout, página principal y estilos globales
-components/   Navbar, CharacterGallery (servidor) y componentes interactivos (cliente)
-lib/          cliente tipado de la API y lógica del generador de contraseñas
+components/   componentes de la interfaz (cliente)
+lib/          lógica del generador de contraseñas
 ```
 
 ## Requisitos

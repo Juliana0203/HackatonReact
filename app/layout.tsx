@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'R&M Explorer | Hackaton',
+  title: 'Hackaton',
   description:
-    'Explorador de personajes de Rick y Morty con herramientas interactivas.',
+    'Retos del hackathon: progress bar, timer, generador de contraseñas y formulario.',
 }
 
 export default function RootLayout({

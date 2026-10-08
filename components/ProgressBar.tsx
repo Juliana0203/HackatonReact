@@ -20,9 +20,9 @@ export function ProgressBar() {
       style={style}
     >
       <span className="progress-card__eyebrow">Estado actual</span>
-      <h2 className="progress-card__title" id="progress-heading">
+      <h1 className="progress-card__title" id="progress-heading">
         Progress bar
-      </h2>
+      </h1>
       <div
         className="progress"
         role="progressbar"
@@ -60,3 +60,4 @@ export function ProgressBar() {
     </section>
   )
 }
+
